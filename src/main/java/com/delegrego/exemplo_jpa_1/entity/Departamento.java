@@ -31,7 +31,7 @@ public class Departamento {
 	@Column(name = "id_departamento")
 	private int idDepartamento;
 
-	@Column(name = "nm_departamento")
+	@Column(name = "nome_departamento")
 	private String nomeDepartamento;
 
 	public Departamento(int idDepartamento, String nomeDepartamento) {
@@ -56,8 +56,8 @@ public class Departamento {
 		return nomeDepartamento;
 	}
 
-	public void setNomeDepartamento(String nmDepartamento) {
-		this.nomeDepartamento = nmDepartamento;
+	public void setNomeDepartamento(String nomeDepartamento) {
+		this.nomeDepartamento = nomeDepartamento;
 	}
 
 	@Override
