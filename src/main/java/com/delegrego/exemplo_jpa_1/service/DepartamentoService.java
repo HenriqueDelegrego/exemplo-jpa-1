@@ -10,9 +10,9 @@ import com.delegrego.exemplo_jpa_1.repo.DepartamentoRepository;
 import com.delegrego.exemplo_jpa_1.repo.FuncionarioRepository;
 
 /**
- * Serviço para gerenciar operações relacionadas a Departamentos. Inclui métodos
- * para criar, ler, atualizar e deletar departamentos, além de validações
- * específicas.
+ * Serviço para gerenciar operações relacionadas a Departamentos. Fornece
+ * métodos para criar, ler, atualizar e deletar departamentos, além de
+ * funcionalidades de pesquisa.
  */
 
 // Indica que esta classe é um serviço do Spring (camada de lógica de negócio)
