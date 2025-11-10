@@ -17,6 +17,6 @@ public interface DepartamentoRepository extends JpaRepository<Departamento, Inte
 	 * @param nomeDepartamento - Parte do nome do departamento a ser buscada.
 	 * @return Lista de departamentos que correspondem aos critérios de busca.
 	 */
-	List<Departamento> findByNmDepartamentoContainingIgnoreCase(String nomeDepartamento);
+	List<Departamento> findByNomeDepartamentoContainingIgnoreCase(String nomeDepartamento);
 
 }

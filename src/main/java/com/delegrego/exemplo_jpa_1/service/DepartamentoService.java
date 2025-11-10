@@ -54,7 +54,7 @@ public class DepartamentoService {
 	 */
 	public List<Departamento> pesquisarDepartamentos(String pesquisa) {
 
-		return departamentoRepo.findByNmDepartamentoContainingIgnoreCase(pesquisa);
+		return departamentoRepo.findByNomeDepartamentoContainingIgnoreCase(pesquisa);
 
 	}
 
