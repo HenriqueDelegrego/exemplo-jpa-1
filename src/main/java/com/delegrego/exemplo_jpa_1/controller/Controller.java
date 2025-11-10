@@ -29,6 +29,7 @@ public class Controller implements CommandLineRunner {
 		// CRUD para Departamento
 
 		// Create
+
 		Departamento departamentoNovo1 = new Departamento();
 		departamentoNovo1.setNomeDepartamento("Financeiro");
 		departamentoService.cadastrarDepartamento(departamentoNovo1);
@@ -46,11 +47,12 @@ public class Controller implements CommandLineRunner {
 
 		// Update
 		Departamento departamentoAtualizado = new Departamento();
+		departamentoAtualizado.setIdDepartamento(3);
 		departamentoAtualizado.setNomeDepartamento("Recursos Humanos");
 		departamentoService.atualizarDepartamento(departamentoAtualizado);
 
 		// Delete
-		departamentoService.deletarDepartamento(3);
+		departamentoService.deletarDepartamento(2);
 
 		// CRUD para Funcionario
 
@@ -75,7 +77,7 @@ public class Controller implements CommandLineRunner {
 		funcionarioAtualizado.setEmail("joaonovo@email.com");
 		funcionarioAtualizado.setSenha("senha_joao_novo");
 		funcionarioAtualizado.setSalario(5500);
-		funcionarioAtualizado.setDepartamento(departamentoNovo2);
+		funcionarioAtualizado.setDepartamento(departamentoNovo3);
 		funcionarioService.atualizarFuncionario(funcionarioAtualizado);
 
 		// Delete
