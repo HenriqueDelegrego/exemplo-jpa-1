@@ -63,9 +63,7 @@ public class FuncionarioService {
 	 * @return Uma lista de funcionários que correspondem ao termo de pesquisa.
 	 */
 	public List<Funcionario> pesquisarFuncionarios(String pesquisa) {
-
 		return funcionarioRepo.findByNomeContainingIgnoreCaseOrEmailContainingIgnoreCase(pesquisa, pesquisa);
-
 	}
 
 	/**
@@ -76,9 +74,7 @@ public class FuncionarioService {
 	 * @throws RuntimeException se o funcionário não existir.
 	 */
 	public Funcionario obterFuncionarioPorId(int id) {
-
 		return funcionarioRepo.findById(id).orElseThrow(() -> new RuntimeException("Funcionário não existe"));
-
 	}
 
 	/**

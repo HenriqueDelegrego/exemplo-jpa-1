@@ -53,9 +53,7 @@ public class DepartamentoService {
 	 * @return Uma lista de departamentos que correspondem à pesquisa.
 	 */
 	public List<Departamento> pesquisarDepartamentos(String pesquisa) {
-
 		return departamentoRepo.findByNomeDepartamentoContainingIgnoreCase(pesquisa);
-
 	}
 
 	/**
@@ -66,9 +64,7 @@ public class DepartamentoService {
 	 * @throws RuntimeException se o departamento não existir.
 	 */
 	public Departamento obterDepartamentoPorId(int id) {
-
 		return departamentoRepo.findById(id).orElseThrow(() -> new RuntimeException("Departamento não existe"));
-
 	}
 
 	/**
