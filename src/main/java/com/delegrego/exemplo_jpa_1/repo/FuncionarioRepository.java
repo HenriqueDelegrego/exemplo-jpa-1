@@ -6,6 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.delegrego.exemplo_jpa_1.entity.Funcionario;
 
+/**
+ * Repositório JPA para a entidade Funcionario. Extende JpaRepository para
+ * fornecer operações CRUD e outras funcionalidades. O JpaRepository é
+ * parametrizado com a entidade Funcionario e o tipo da chave primária
+ * (Integer).
+ */
 public interface FuncionarioRepository extends JpaRepository<Funcionario, Integer> {
 
 	// Derived queries
